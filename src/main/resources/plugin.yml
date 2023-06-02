@@ -1,0 +1,30 @@
+main: net.kettlemc.custompolls.CustomPollsPlugin
+name: CustomPolls
+version: 1.0
+author: KettleMC
+website: KettleMC.net
+prefix: Polls
+commands:
+  poll:
+    aliases: [voting, polls]
+    description: Main command for managing polls
+    usage: /<command> <create|delete|list|vote|results>
+permissions:
+  custompolls.command:
+    description: Permission to use the /poll command
+    default: true
+  custompolls.create:
+    description: Permission to create a poll
+    default: op
+  custompolls.delete:
+    description: Permission to delete a poll
+    default: op
+  custompolls.list:
+    description: Permission to list all polls
+    default: true
+  custompolls.vote:
+    description: Permission to vote on a poll
+    default: true
+  custompolls.results:
+    description: Permission to view the results of a poll
+    default: true
